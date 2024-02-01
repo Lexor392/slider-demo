@@ -1,0 +1,164 @@
+body {
+    .container {
+        .section {
+            display: flex;
+            align-items: center;
+
+            .slider-wrapper {
+
+                .slick-slider {
+                    .card {
+                        width: 400px;
+                        height: 600px;
+                        opacity: 0.5;
+                        transition: all 0.5s;
+
+                        .card-img {
+                            width: 100%;
+                            display: block;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .slick-current {
+                        opacity: 1;
+                    }
+
+                    .slick-prev,
+                    .slick-next {
+                        display: none;
+                    }
+                }
+
+                .slick-vertical .slick-slide {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                .slider-nav {
+                    width: 70px;
+                    display: grid;
+                    justify-content: center;
+
+                    .card {
+                        margin: 15px 0 15px 0;
+                        overflow: hidden;
+                    }
+                }
+
+                .slider-for {
+                    width: 400px;
+
+                    .card {
+                        .card-img:hover {
+                            transform: scale(8);
+                            cursor: auto;
+                        }
+                    }
+                }
+            }
+
+            .slider-wrapper-nav {
+                display: grid;
+                justify-content: center;
+
+                .custom-arrow {
+                    width: max-content;
+                    height: max-content;
+                    margin: 0 auto;
+                    background: none;
+                    border: none;
+                    opacity: 0;
+                    color: #fff;
+                    transition: all 0.5s;
+                    position: relative;
+                    z-index: 10;
+                    cursor: pointer;
+                }
+
+                .custom1-slick-prev {
+                    transform: translateY(36px);
+
+                    .arrow-font-size {
+                        font-size: 50px;
+                    }
+                }
+
+                .custom1-slick-next {
+                    transform: rotate(180deg) translateY(36px);
+
+                    .arrow-font-size {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            .slider-wrapper-nav:hover {
+                .custom1-slick-prev {
+                    transform: translateY(60px);
+                    opacity: 0.8;
+                }
+
+                .custom1-slick-next {
+                    opacity: 0.8;
+                    transform: rotate(180deg) translateY(60px);
+                }
+            }
+
+            .slider-wrapper-for {
+                display: flex;
+                align-items: center;
+                // margin: 5px 0 5px 30px;
+
+                .custom-arrow {
+                    width: max-content;
+                    height: max-content;
+                    background: none;
+                    border: none;
+                    color: #fff;
+                    opacity: 0;
+                    transition: all 0.5s;
+                    position: relative;
+                    z-index: 10;
+                    cursor: pointer;
+                }
+
+                .custom2-slick-prev {
+                    transform: translateX(20px);
+
+                    .arrow-font-size {
+                        font-size: 50px;
+                    }
+                }
+
+                .custom2-slick-next {
+                    transform: translateX(20px);
+
+                    .arrow-font-size {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            .slider-wrapper-for:hover {
+                .custom2-slick-prev {
+                    transform: translateX(46px);
+                    opacity: 0.8;
+                }
+
+                .custom2-slick-next {
+                    opacity: 0.8;
+                    transform: translateX(-46px);
+                }
+            }
+        }
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+    }
+}
